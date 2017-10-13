@@ -1,0 +1,35 @@
+<header>
+  <div class="search-bar searc-bar-js">
+    <div class="logo col-lg-2 col-md-2 col-sm-12 col-xs-12">
+      <a href="/" class="logo-image"> </a>
+    </div>
+
+    <div class="form  col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <form class="search-bar-form search-bar-form-js" method="GET" action="/q">
+        <div class="input-wrapper">
+          <a class="category-selector" href="#">
+            Select
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+          </a>
+          <input class="search-bar-input search-bar-input-js form-control" type="text" name="search">
+          <a class="search-button" href="">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </a>
+        </div>
+      </form>
+      <nav class="main-categories-selector" >
+        {{#each categories}}
+        <a class="category-link" href="#"><h1>{{this.name}}</h1></a>
+        {{/each}}
+      </nav>
+    </div>
+
+    <div class="user-menu col-lg-4 col-md-4 hidden-xs hidden-sm">
+      <ul class="user-menu-list">
+        <li class="item"><a href="#/register-user">Register</a></li>
+        <li class="item"><a href="#/login-user">Login</a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
